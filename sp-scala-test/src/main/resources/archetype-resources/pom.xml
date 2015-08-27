@@ -7,7 +7,8 @@
   <inceptionYear>2015</inceptionYear>
   <properties>
     <scala.version>2.11.7</scala.version>
-    <scala.pluginVersion>2.14.2</scala.pluginVersion>
+    <scalatest.version>2.11</scalatest.version>
+    <scala.pluginVersion>2.15.2</scala.pluginVersion>
     <junit.version>4.12</junit.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
@@ -36,7 +37,7 @@
     </dependency>
     <dependency>
       <groupId>org.scalatest</groupId>
-      <artifactId>scalatest_${scala.version}</artifactId>
+      <artifactId>scalatest_${scalatest.version}</artifactId>
       <version>2.2.4</version>
       <scope>test</scope>
     </dependency>

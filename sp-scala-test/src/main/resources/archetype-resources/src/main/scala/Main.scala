@@ -1,5 +1,5 @@
 package ${package}
 
-object App extends Application {
+object Main extends App {
   println( "Hello World!" );
 }

@@ -2,7 +2,7 @@
       xsi:schemaLocation="http://maven.apache.org/plugins/maven-archetype-plugin/archetype/1.0.0 http://maven.apache.org/xsd/archetype-1.0.0.xsd">
       <id>sp-scala-test</id>
  <resources>
-    <resource>src/main/scala/App.scala</resource>
+    <resource>src/main/scala/Main.scala</resource>
   </resources>
   <testResources>
     <resource>src/test/scala/AppSpec.scala</resource>
