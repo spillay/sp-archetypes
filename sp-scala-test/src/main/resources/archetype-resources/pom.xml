@@ -47,6 +47,21 @@
       <version>${junit.version}</version>
       <scope>test</scope>
     </dependency>
+	<dependency>
+			<groupId>com.dsleng.etool</groupId>
+			<artifactId>com.dsleng.etool.presentation</artifactId>
+			<version>1.0.0-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>org.eclipse.emf</groupId>
+			<artifactId>org.eclipse.emf.ecore</artifactId>
+			<version>2.11.0-v20150123-0347</version>
+		</dependency>
+		<dependency>
+			<groupId>org.eclipse.emf</groupId>
+			<artifactId>org.eclipse.emf.common</artifactId>
+			<version>2.11.0-v20150123-0347</version>
+		</dependency>
   </dependencies>
 
   <build>
