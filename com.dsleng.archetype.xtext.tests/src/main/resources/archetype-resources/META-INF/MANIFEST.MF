@@ -1,11 +1,12 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
-Bundle-Name: com.dsleng.etool.xtext.presentation.view.tests
-Bundle-Vendor: My Company
+Bundle-Name: ${artifactId}
+Bundle-Vendor: DSLEng
 Bundle-Version: 1.0.0.qualifier
-Bundle-SymbolicName: com.dsleng.etool.xtext.presentation.view.tests; singleton:=true
+Bundle-SymbolicName: ${artifactId}; singleton:=true
 Bundle-ActivationPolicy: lazy
-Require-Bundle: com.dsleng.etool.xtext.presentation.view,
+Require-Bundle: ${ModelBundle},
+ ${base},
  com.dsleng.etool.xtext.presentation.view.ui,
  org.eclipse.core.runtime,
  org.eclipse.xtext.junit4,
@@ -21,4 +22,3 @@ Import-Package: org.apache.log4j,
  org.junit.runners.model;version="4.5.0",
  org.hamcrest.core
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
-Export-Package: com.dsleng.etool.xtext.presentation.view

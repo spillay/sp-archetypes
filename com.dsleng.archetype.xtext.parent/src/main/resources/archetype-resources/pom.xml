@@ -68,4 +68,10 @@
 			</plugins>
 		</pluginManagement>
 	</build>
+<modules>
+		<module>../${package}</module>
+		<module>../${package}.tests</module>
+		<module>../${package}.ui</module>
+		<module>../${package}.sdk</module>
+	</modules>
 </project>

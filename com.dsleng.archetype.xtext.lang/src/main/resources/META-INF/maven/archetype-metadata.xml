@@ -9,6 +9,7 @@
     <requiredProperty key="GenModelFile"/>
     <requiredProperty key="GenerateEPackage"/>
     <requiredProperty key="ModelURI"/>
+    <requiredProperty key="ModelBundle"/>
 </requiredProperties>
       <fileSets>
         <fileSet filtered="true" encoding="UTF-8">

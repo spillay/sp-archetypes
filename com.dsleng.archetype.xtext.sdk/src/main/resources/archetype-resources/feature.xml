@@ -3,49 +3,27 @@
 #set( $symbol_escape = '\' )
 <?xml version="1.0" encoding="UTF-8"?>
 <feature
-      id="${package}.presentation.view.sdk"
-      label="ViewDsl SDK Feature "
+      id="${package}"
+      label="${langName} SDK Feature "
       version="1.0.0.qualifier">
 
    <plugin
-         id="${package}.presentation.view"
+         id="${base}"
          download-size="0"
          install-size="0"
          version="0.0.0"
          unpack="false"/>
 
    <plugin
-         id="${package}.presentation.view.ui"
+         id="${base}.ui"
          download-size="0"
          install-size="0"
          version="0.0.0"
          unpack="false"/>
 
    <plugin
-         id="com.dsleng.etool.presentation"
+         id="${base}.tests"
          download-size="0"
          install-size="0"
          version="0.0.0"/>
-
-   <plugin
-         id="com.dsleng.etool.presentation.edit"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="com.dsleng.etool.presentation.editor"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="com.dsleng.etool.presentation.semantics.primefaces"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
 </feature>
