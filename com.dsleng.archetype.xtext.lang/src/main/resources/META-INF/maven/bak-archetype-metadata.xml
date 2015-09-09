@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archetype-descriptor xsi:schemaLocation="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0 http://maven.apache.org/xsd/archetype-descriptor-1.0.0.xsd" name="com.dsleng.etool.xtext.parent"
+    xmlns="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <fileSets>
+    <fileSet encoding="UTF-8">
+      <directory>.settings</directory>
+      <includes>
+        <include>**/*.prefs</include>
+      </includes>
+    </fileSet>
+    <fileSet filtered="true" encoding="UTF-8">
+      <directory></directory>
+      <includes>
+        <include>.project</include>
+      </includes>
+    </fileSet>
+  </fileSets>
+  <modules>
+    <module id="com.dsleng.etool.xtext.presentation.view" dir="com.dsleng.etool.xtext.presentation.view" name="com.dsleng.etool.xtext.presentation.view">
+      <fileSets>
+        <fileSet filtered="true" encoding="UTF-8">
+          <directory>src-gen/com</directory>
+          <includes>
+            <include>**/*.java</include>
+          </includes>
+        </fileSet>
+        <fileSet filtered="true" encoding="UTF-8">
+          <directory>xtend-gen/com</directory>
+          <includes>
+            <include>**/*.java</include>
+          </includes>
+        </fileSet>
+        <fileSet filtered="true" encoding="UTF-8">
+          <directory>src/com</directory>
+          <includes>
+            <include>**/*.java</include>
+          </includes>
+        </fileSet>
+        <fileSet encoding="UTF-8">
+          <directory>META-INF</directory>
+          <includes>
+            <include>**/*.MF</include>
+          </includes>
+        </fileSet>
+        <fileSet encoding="UTF-8">
+          <directory>src-gen/com</directory>
+          <includes>
+            <include>**/*.g</include>
+            <include>**/*.xtextbin</include>
+            <include>**/*.tokens</include>
+          </includes>
+        </fileSet>
+        <fileSet encoding="UTF-8">
+          <directory>xtend-gen/com</directory>
+          <includes>
+            <include>**/*._trace</include>
+          </includes>
+        </fileSet>
+        <fileSet encoding="UTF-8">
+          <directory>src/com</directory>
+          <includes>
+            <include>**/*.mwe2</include>
+            <include>**/*.xtext</include>
+            <include>**/*.xtend</include>
+          </includes>
+        </fileSet>
+        <fileSet encoding="UTF-8">
+          <directory>.settings</directory>
+          <includes>
+            <include>**/*.prefs</include>
+          </includes>
+        </fileSet>
+        <fileSet filtered="true" encoding="UTF-8">
+          <directory></directory>
+          <includes>
+            <include>build.properties</include>
+            <include>.classpath</include>
+            <include>.project</include>
+            <include>plugin.xml</include>
+          </includes>
+        </fileSet>
+        <fileSet encoding="UTF-8">
+          <directory></directory>
+          <includes>
+            <include>.antlr-generator-3.2.0-patch.jar</include>
+            <include>.gitignore</include>
+          </includes>
+        </fileSet>
+      </fileSets>
+    </module>
+    <module id="com.dsleng.etool.xtext.presentation.view.tests" dir="com.dsleng.etool.xtext.presentation.view.tests" name="com.dsleng.etool.xtext.presentation.view.tests">
+      <fileSets>
+        <fileSet filtered="true" encoding="UTF-8">
+          <directory>src-gen/com</directory>
+          <includes>
+            <include>**/*.java</include>
+          </includes>
+        </fileSet>
+        <fileSet encoding="UTF-8">
+          <directory>META-INF</directory>
+          <includes>
+            <include>**/*.MF</include>
+          </includes>
+        </fileSet>
+        <fileSet encoding="UTF-8">
+          <directory>.settings</directory>
+          <includes>
+            <include>**/*.prefs</include>
+          </includes>
+        </fileSet>
+        <fileSet filtered="true" encoding="UTF-8">
+          <directory></directory>
+          <includes>
+            <include>build.properties</include>
+            <include>.classpath</include>
+            <include>.project</include>
+          </includes>
+        </fileSet>
+        <fileSet encoding="UTF-8">
+          <directory></directory>
+          <includes>
+            <include>com.dsleng.etool.xtext.presentation.view.tests.launch</include>
+            <include>.gitignore</include>
+          </includes>
+        </fileSet>
+      </fileSets>
+    </module>
+    <module id="com.dsleng.etool.xtext.presentation.view.ui" dir="com.dsleng.etool.xtext.presentation.view.ui" name="com.dsleng.etool.xtext.presentation.view.ui">
+      <fileSets>
+        <fileSet filtered="true" encoding="UTF-8">
+          <directory>src-gen/com</directory>
+          <includes>
+            <include>**/*.java</include>
+          </includes>
+        </fileSet>
+        <fileSet filtered="true" encoding="UTF-8">
+          <directory>xtend-gen/com</directory>
+          <includes>
+            <include>**/*.java</include>
+          </includes>
+        </fileSet>
+        <fileSet filtered="true" encoding="UTF-8">
+          <directory>src/com</directory>
+          <includes>
+            <include>**/*.java</include>
+          </includes>
+        </fileSet>
+        <fileSet encoding="UTF-8">
+          <directory>META-INF</directory>
+          <includes>
+            <include>**/*.MF</include>
+          </includes>
+        </fileSet>
+        <fileSet encoding="UTF-8">
+          <directory>src-gen/com</directory>
+          <includes>
+            <include>**/*.g</include>
+            <include>**/*.tokens</include>
+          </includes>
+        </fileSet>
+        <fileSet encoding="UTF-8">
+          <directory>xtend-gen/com</directory>
+          <includes>
+            <include>**/*._trace</include>
+          </includes>
+        </fileSet>
+        <fileSet encoding="UTF-8">
+          <directory>src/com</directory>
+          <includes>
+            <include>**/*.xtend</include>
+          </includes>
+        </fileSet>
+        <fileSet encoding="UTF-8">
+          <directory>bin/com</directory>
+          <includes>
+            <include>**/*._trace</include>
+            <include>**/*.g</include>
+            <include>**/*.tokens</include>
+            <include>**/*.class</include>
+            <include>**/*.xtendbin</include>
+          </includes>
+        </fileSet>
+        <fileSet encoding="UTF-8">
+          <directory>.settings</directory>
+          <includes>
+            <include>**/*.prefs</include>
+          </includes>
+        </fileSet>
+        <fileSet filtered="true" encoding="UTF-8">
+          <directory></directory>
+          <includes>
+            <include>build.properties</include>
+            <include>.classpath</include>
+            <include>.project</include>
+            <include>plugin.xml</include>
+          </includes>
+        </fileSet>
+        <fileSet encoding="UTF-8">
+          <directory></directory>
+          <includes>
+            <include>plugin.xml_gen</include>
+            <include>.gitignore</include>
+          </includes>
+        </fileSet>
+      </fileSets>
+    </module>
+    <module id="com.dsleng.etool.xtext.presentation.view.sdk" dir="com.dsleng.etool.xtext.presentation.view.sdk" name="com.dsleng.etool.xtext.presentation.view.sdk">
+      <fileSets>
+        <fileSet encoding="UTF-8">
+          <directory>.settings</directory>
+          <includes>
+            <include>**/*.prefs</include>
+          </includes>
+        </fileSet>
+        <fileSet filtered="true" encoding="UTF-8">
+          <directory></directory>
+          <includes>
+            <include>feature.xml</include>
+            <include>build.properties</include>
+            <include>.project</include>
+          </includes>
+        </fileSet>
+        <fileSet encoding="UTF-8">
+          <directory></directory>
+          <includes>
+            <include>.gitignore</include>
+          </includes>
+        </fileSet>
+      </fileSets>
+    </module>
+  </modules>
+</archetype-descriptor>

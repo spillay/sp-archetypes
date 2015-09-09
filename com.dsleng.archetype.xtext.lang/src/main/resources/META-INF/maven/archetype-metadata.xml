@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archetype-descriptor xsi:schemaLocation="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0 http://maven.apache.org/xsd/archetype-descriptor-1.0.0.xsd" name="xtext-lang"
+    xmlns="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<requiredProperties>
+    <requiredProperty key="parentId"/>
+    <requiredProperty key="langName"/>
+    <requiredProperty key="langExt"/>
+    <requiredProperty key="GenModelFile"/>
+    <requiredProperty key="GenerateEPackage"/>
+    <requiredProperty key="ModelURI"/>
+</requiredProperties>
+      <fileSets>
+        <fileSet filtered="true" encoding="UTF-8">
+          <directory>src-gen/</directory>
+          <includes>
+            <include>**/*.java</include>
+          </includes>
+        </fileSet>
+        <fileSet filtered="true" encoding="UTF-8">
+          <directory>xtend-gen/</directory>
+          <includes>
+            <include>**/*.java</include>
+          </includes>
+        </fileSet>
+        <fileSet filtered="true" encoding="UTF-8">
+          <directory>src/</directory>
+          <includes>
+            <include>**/*.java</include>
+          </includes>
+        </fileSet>
+        <fileSet encoding="UTF-8" filtered="true">
+          <directory>META-INF</directory>
+          <includes>
+            <include>**/*.MF</include>
+          </includes>
+        </fileSet>
+        <fileSet encoding="UTF-8">
+          <directory>src-gen/</directory>
+          <includes>
+            <include>**/*.g</include>
+            <include>**/*.xtextbin</include>
+            <include>**/*.tokens</include>
+          </includes>
+        </fileSet>
+        <fileSet encoding="UTF-8">
+          <directory>xtend-gen/</directory>
+          <includes>
+            <include>**/*._trace</include>
+          </includes>
+        </fileSet>
+        <fileSet encoding="UTF-8" filtered="true">
+          <directory>src/</directory>
+          <includes>
+            <include>**/*.mwe2</include>
+            <include>**/*.xtext</include>
+            <include>**/*.xtend</include>
+          </includes>
+        </fileSet>
+        <fileSet encoding="UTF-8">
+          <directory>.settings</directory>
+          <includes>
+            <include>**/*.prefs</include>
+          </includes>
+        </fileSet>
+        <fileSet filtered="true" encoding="UTF-8">
+          <directory></directory>
+          <includes>
+            <include>build.properties</include>
+            <include>.classpath</include>
+            <include>.project</include>
+            <include>plugin.xml</include>
+          </includes>
+        </fileSet>
+        <fileSet encoding="UTF-8">
+          <directory></directory>
+          <includes>
+            <include>.antlr-generator-3.2.0-patch.jar</include>
+          </includes>
+        </fileSet>
+      </fileSets>
+</archetype-descriptor>
