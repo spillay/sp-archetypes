@@ -38,7 +38,7 @@ lang:
 ui:
 	 $(mvn)  -DarchetypeGroupId=$(archetypeGroupId) -DarchetypeArtifactId=com.dsleng.archetype.xtext.ui -DarchetypeVersion=$(archetypeVersion) -DgroupId=$(groupId) -DartifactId=$(artifactId).ui -Dversion=$(version) -Dpackage=$(artifactId).ui  -DparentId=$(parentId) -Dfilter=com.dsleng -DModelBundle=$(ModelBundle) -Dbase=$(base)
 tests:
-	 $(mvn)  -DarchetypeGroupId=$(archetypeGroupId) -DarchetypeArtifactId=com.dsleng.archetype.xtext.ui -DarchetypeVersion=$(archetypeVersion) -DgroupId=$(groupId) -DartifactId=$(artifactId).tests -Dversion=$(version) -Dpackage=$(artifactId).tests  -DparentId=$(parentId) -Dfilter=com.dsleng -DModelBundle=$(ModelBundle) -Dbase=$(base)
+	 $(mvn)  -DarchetypeGroupId=$(archetypeGroupId) -DarchetypeArtifactId=com.dsleng.archetype.xtext.tests -DarchetypeVersion=$(archetypeVersion) -DgroupId=$(groupId) -DartifactId=$(artifactId).tests -Dversion=$(version) -Dpackage=$(artifactId).tests  -DparentId=$(parentId) -Dfilter=com.dsleng -DModelBundle=$(ModelBundle) -Dbase=$(base)
 sdk:
 	 $(mvn)  -DarchetypeGroupId=$(archetypeGroupId) -DarchetypeArtifactId=com.dsleng.archetype.xtext.sdk -DarchetypeVersion=$(archetypeVersion) -DgroupId=$(groupId) -DartifactId=$(artifactId).sdk -Dversion=$(version) -Dpackage=$(artifactId).sdk  -DparentId=$(parentId) -Dfilter=com.dsleng -DModelBundle=$(ModelBundle) -Dbase=$(base)
 

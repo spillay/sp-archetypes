@@ -13,7 +13,6 @@
 		<xtext.version>2.8.4</xtext.version>
 		<etool.version>1.0.0-SNAPSHOT</etool.version>
 	</properties>
-	<version>${version}</version>
 	<build>
 		<pluginManagement>
 			<plugins>
