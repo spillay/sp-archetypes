@@ -16,6 +16,18 @@
 				<include>**/*.java</include>
 			</includes>
 		</fileSet>
+		<fileSet filtered="true" encoding="UTF-8">
+			<directory>xtend-gen/</directory>
+			<includes>
+				<include>**/*.java</include>
+			</includes>
+		</fileSet>
+		<fileSet filtered="true" encoding="UTF-8">
+			<directory>src/</directory>
+			<includes>
+				<include>**/*.java</include>
+			</includes>
+		</fileSet>
 		<fileSet encoding="UTF-8" filtered="true">
 			<directory>META-INF</directory>
 			<includes>
