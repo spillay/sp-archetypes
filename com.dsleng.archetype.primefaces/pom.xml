@@ -10,5 +10,4 @@
   <artifactId>com.dsleng.archetype.primefaces</artifactId>
   <packaging>maven-archetype</packaging>
   <name>com-dsleng-archetype-primefaces</name>
-  <url>http://www.dsleng.com/E-government/</url>
 </project>
