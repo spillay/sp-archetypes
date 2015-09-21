@@ -7,7 +7,7 @@
 	<packaging>pom</packaging>
 	<name>sp-archetype-parent</name>
 	 <properties>
-       <archetype.version>2.2</archetype.version>
+       <archetype.version>2.4</archetype.version>
       </properties>
 	<distributionManagement>
     <repository>
@@ -44,5 +44,6 @@
   <module>../com.dsleng.archetype.xtext.ui</module>
   <module>../com.dsleng.archetype.xtext.tests</module>
   <module>../com.dsleng.archetype.xtext.sdk</module>
+  <module>../com.dsleng.archetype.primefaces</module>
   </modules>
 </project>
