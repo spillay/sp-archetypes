@@ -56,7 +56,23 @@
      </dependencies>
 
     <build>
-        <plugins>
+	<plugins>
+	<plugin>
+        	<groupId>com.dsleng.etool.primefaces</groupId>
+        	<artifactId>com.dsleng.etool.primefaces.mojo</artifactId>
+        	<version>1.0.0-SNAPSHOT</version>
+		<configuration>
+			<dslFile>${langFile}</dslFile>
+		</configuration>
+        	<executions>
+          		<execution>
+            			<phase>process-resources</phase>
+            		<goals>
+              			<goal>PageGen</goal>
+            		</goals>
+          		</execution>
+        	</executions>
+      	</plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
