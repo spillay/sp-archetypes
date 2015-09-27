@@ -9,17 +9,27 @@
 	</parent>
 	<packaging>eclipse-plugin</packaging>
 	<artifactId>${artifactId}</artifactId>
-	<build>
+<build>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-clean-plugin</artifactId>
-				<executions>
-					<execution>
-						<id>gen-clean</id>
-						<phase>clean</phase>
-					</execution>
-				</executions>
+				<configuration combine.self="override">
+					<filesets>
+						<fileset>
+							<directory>src-gen</directory>
+							<excludes>
+								<exclude>**</exclude>
+							</excludes>
+						</fileset>
+						<fileset>
+						<directory>xtend-gen</directory>
+						<includes>
+						<include>**</include>
+						</includes>
+						</fileset>
+					</filesets>
+				</configuration>
 			</plugin>
 			<plugin>
 				<groupId>org.eclipse.xtend</groupId>
