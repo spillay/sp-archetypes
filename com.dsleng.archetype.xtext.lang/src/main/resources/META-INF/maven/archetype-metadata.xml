@@ -10,6 +10,8 @@
     <requiredProperty key="GenerateEPackage"/>
     <requiredProperty key="ModelURI"/>
     <requiredProperty key="ModelBundle"/>
+    <requiredProperty key="ModelGroup"/>
+    <requiredProperty key="ModelArti"/>
 </requiredProperties>
       <fileSets>
         <fileSet filtered="true" encoding="UTF-8">

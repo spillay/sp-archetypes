@@ -1,4 +1,5 @@
-module com.dsleng.etool.xtext.presentation.view.ViewDsl
+#set ( $d = ".")
+module ${ModelBundle}${d}${langName}
 
 import org.eclipse.emf.mwe.utils.*
 import org.eclipse.xtext.generator.*
@@ -16,6 +17,7 @@ Workflow {
 		resourceSet = org.eclipse.xtext.resource.XtextResourceSet:theResourceSet {}
     	
     	// add mappings from platform:/resource to classpath:/
+	/*
     	uriMap = {
     		from = "platform:/resource/org.eclipse.xtext.xbase/"
     		to = "classpath:/"
@@ -24,6 +26,7 @@ Workflow {
     		from = "platform:/resource/org.eclipse.xtext.common.types/"
     		to = "classpath:/"
     	}
+	*/
 		platformUri = "${runtimeProject}/.."
 		registerGeneratedEPackage = "${GenerateEPackage}"
 		registerGenModelFile = "${GenModelFile}"

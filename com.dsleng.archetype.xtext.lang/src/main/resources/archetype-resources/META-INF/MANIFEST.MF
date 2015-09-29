@@ -4,7 +4,7 @@ Bundle-Name: ${artifactId}
 Bundle-Vendor: DSLEng
 Bundle-Version: 1.0.0.qualifier
 Bundle-SymbolicName: ${artifactId};singleton:=true
-Require-Bundle: ${ModelBundle},
+Require-Bundle: ${ModelArti},
  org.eclipse.xtext;visibility:=reexport,
  org.eclipse.equinox.common;bundle-version="3.5.0"
 Import-Package: org.apache.log4j
