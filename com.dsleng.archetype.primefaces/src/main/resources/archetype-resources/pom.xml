@@ -21,7 +21,7 @@
         <maven-compiler-plugin.version>3.1</maven-compiler-plugin.version>
         <jetty-maven-plugin.version>8.1.14.v20131031</jetty-maven-plugin.version>
 	<wildfly.home>/Data/wildfly-8.2.0/wildfly-8.2.0.Final</wildfly.home>
-	<packageName>${artifactId}<</packageName>
+	<packageName>${artifactId}</packageName>
     </properties>
 
     <dependencies>
