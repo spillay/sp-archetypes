@@ -21,7 +21,7 @@
         <maven-compiler-plugin.version>3.1</maven-compiler-plugin.version>
         <jetty-maven-plugin.version>8.1.14.v20131031</jetty-maven-plugin.version>
 	<wildfly.home>/Data/wildfly-8.2.0/wildfly-8.2.0.Final</wildfly.home>
-
+	<packageName>${artifactId}<</packageName>
     </properties>
 
     <dependencies>
@@ -59,6 +59,61 @@
 
     <build>
 	<plugins>
+		<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>hibernate3-maven-plugin</artifactId>
+				<version>2.2</version>
+				<executions>
+					<execution>
+						<id>generate-entities</id>
+						<phase>generate-sources</phase>
+						<goals>
+							<goal>hbm2java</goal>
+						</goals>
+					</execution>
+					<execution>
+						<id>generate-schema</id>
+						<phase>generate-resources</phase>
+						<goals>
+							<goal>hbm2ddl</goal>
+						</goals>
+					</execution>
+				</executions>
+				<configuration>
+					<components>
+						<component>
+							<name>hbm2java</name>
+							<implementation>configuration</implementation>
+							<outputDirectory>src/main/java</outputDirectory>
+						</component>
+						<component>
+							<name>hbm2ddl</name>
+							<implementation>configuration</implementation>
+						</component>
+					</components>
+					<componentProperties>
+						<revengfile>src/main/resources/reveng.xml</revengfile>
+						<configurationfile>src/main/resources/hibernate.cfg.xml</configurationfile>
+						<packagename>${packageName}</packagename>
+						<jdk5>true</jdk5>
+						<ejb3>true</ejb3>
+					</componentProperties>
+				</configuration>
+				<dependencies>
+					<dependency>
+						<groupId>cglib</groupId>
+						<artifactId>cglib-nodep</artifactId>
+						<version>2.2.2</version>
+					</dependency>
+					<dependency>
+						<groupId>postgresql</groupId>
+						<artifactId>postgresql</artifactId>
+						<version>9.1-901.jdbc4</version>
+					</dependency>
+				</dependencies>
+			</plugin>
+
+<!--
 	<plugin>
         	<groupId>com.dsleng.etool.primefaces</groupId>
         	<artifactId>com.dsleng.etool.primefaces.mojo</artifactId>
@@ -75,6 +130,7 @@
           		</execution>
         	</executions>
       	</plugin>
+-->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
