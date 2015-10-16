@@ -1,0 +1,25 @@
+<persistence xmlns="http://java.sun.com/xml/ns/persistence"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd"
+	version="2.0">
+	<persistence-unit name="punit">
+		<provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+		<!--  <jta-data-source>java:/PostGresDS</jta-data-source> -->
+		<!-- Annotated entity classes -->
+		<class>za.co.egov.cn.Permit</class>
+		<class>za.co.egov.cn.Client</class>
+		<class>za.co.egov.cn.PermitType</class>
+		<class>za.co.egov.cn.PermitStatus</class>
+		<class>za.co.egov.cn.PermitHistory</class>
+		<properties>
+			<property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/egov" />
+			<property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver" />
+			<property name="javax.persistence.jdbc.user" value="egov" />
+			<property name="javax.persistence.jdbc.password" value="12test21" />
+			<property name="eclipselink.logging.level" value="ALL" />
+			<property name="hibernate.hbm2ddl.auto" value="create-drop"/>
+		</properties>
+		
+		
+	</persistence-unit>
+</persistence>

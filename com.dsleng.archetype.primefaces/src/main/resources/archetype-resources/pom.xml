@@ -9,20 +9,26 @@
     <name>JSF - PrimeFaces E-government Services</name>
     <url>http://www.dsleng.com/E-government/</url>
 
-    <properties>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <java.version>1.7</java.version>
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<java.version>1.8</java.version>
 
-        <junit.version>4.12-beta-2</junit.version>
-        <servlet.version>3.0.1</servlet.version>
-        <jsf.version>2.2.8-02</jsf.version>
-        <primefaces.version>5.1</primefaces.version>
+		<junit.version>4.12-beta-2</junit.version>
+		<servlet.version>3.0.1</servlet.version>
+		<jsf.version>2.2.8-02</jsf.version>
+		<primefaces.version>5.1</primefaces.version>
 
-        <maven-compiler-plugin.version>3.1</maven-compiler-plugin.version>
-        <jetty-maven-plugin.version>8.1.14.v20131031</jetty-maven-plugin.version>
-	<wildfly.home>/Data/wildfly-8.2.0/wildfly-8.2.0.Final</wildfly.home>
-	<packageName>${artifactId}</packageName>
-    </properties>
+		<maven-compiler-plugin.version>3.1</maven-compiler-plugin.version>
+		<jetty-maven-plugin.version>8.1.14.v20131031</jetty-maven-plugin.version>
+		<wildfly.home>/Data/wildfly/wildfly-10.0.0.CR2</wildfly.home>
+		<packageName>za.co.egov.cn</packageName>
+		<spring.release>4.2.1.RELEASE</spring.release>
+		<hibernate.release>4.3.7.Final</hibernate.release>
+		<jackson.version>2.4.0</jackson.version>
+		<jaxb-api.version>2.2.11</jaxb-api.version>
+		<packageName>${artifactId}</packageName>
+	</properties>
+
 
     <dependencies>
        <!-- JUnit -->
@@ -55,6 +61,73 @@
             <artifactId>primefaces</artifactId>
             <version>${primefaces.version}</version>
         </dependency>
+	<!-- Hibernate Persistence -->
+		<dependency>
+			<groupId>org.hibernate.javax.persistence</groupId>
+			<artifactId>hibernate-jpa-2.1-api</artifactId>
+			<version>1.0.0.Final</version>
+		</dependency>
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-core</artifactId>
+			<version>${hibernate.release}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-entitymanager</artifactId>
+			<version>${hibernate.release}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-web</artifactId>
+			<version>${spring.release}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-webmvc</artifactId>
+			<version>${spring.release}</version>
+			<exclusions>
+				<exclusion>
+					<artifactId>commons-logging</artifactId>
+					<groupId>commons-logging</groupId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-jdbc</artifactId>
+			<version>${spring.release}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-orm</artifactId>
+			<version>${spring.release}</version>
+		</dependency>
+			<dependency>
+			<groupId>org.springframework.data</groupId>
+			<artifactId>spring-data-jpa</artifactId>
+			<version>1.9.0.RELEASE</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-test</artifactId>
+			<version>${spring.release}</version>
+		</dependency>
+		<dependency>
+			<groupId>postgresql</groupId>
+			<artifactId>postgresql</artifactId>
+			<version>9.1-901.jdbc4</version>
+		</dependency>
+		<dependency>
+	<groupId>com.fasterxml.jackson.core</groupId>
+	<artifactId>jackson-core</artifactId>
+	<version>2.6.3</version>
+</dependency>
+<dependency>
+	<groupId>com.fasterxml</groupId>
+	<artifactId>classmate</artifactId>
+	<version>0.8.0</version>
+</dependency>
      </dependencies>
 
     <build>
@@ -92,8 +165,7 @@
 						</component>
 					</components>
 					<componentProperties>
-						<revengfile>src/main/resources/reveng.xml</revengfile>
-						<configurationfile>src/main/resources/hibernate.cfg.xml</configurationfile>
+						<configurationfile>src/test/resources/hibernate.cfg.xml</configurationfile>
 						<packagename>${packageName}</packagename>
 						<jdk5>true</jdk5>
 						<ejb3>true</ejb3>
