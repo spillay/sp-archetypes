@@ -13,7 +13,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(locations = {"/spring-servlet.xml"})
+@ContextConfiguration(locations = {"classpath:spring-servlet.xml"})
 @Transactional
 public class SpringTest {
 
