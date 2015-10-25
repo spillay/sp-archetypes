@@ -42,5 +42,15 @@
         <include>**/*.xhtml</include>
       </includes>
     </fileSet>
+    <fileSet filtered="false" encoding="UTF-8">
+      <directory>src/main/webapp</directory>
+      <includes>
+        <include>**/*.css</include>
+        <include>**/*.js</include>
+        <include>**/*.png</include>
+        <include>**/*.jpg</include>
+        <include>**/*.gif</include>
+      </includes>
+    </fileSet>
   </fileSets>
 </archetype-descriptor>
