@@ -1,0 +1,201 @@
+body {
+  min-width: 630px;      /* 2x (LC fullwidth +
+                            CC padding) + RC fullwidth */
+}
+#container {
+  padding-left: 200px;   /* LC fullwidth */
+  padding-right: 190px;  /* RC fullwidth + CC padding */
+}
+#container .column {
+  position: relative;
+  float: left;
+}
+#center {
+  padding: 10px 20px;    /* CC padding */
+  width: 100%;
+  background-image: url("#{resource['css:images/new-citizen.png']}");
+  background-repeat:no-repeat;
+}
+#left {
+  width: 180px;          /* LC width */
+  padding: 0 10px;       /* LC padding */
+  right: 240px;          /* LC fullwidth + CC padding */
+  margin-left: -100%;
+  background-image: url("#{resource['css:images/new-citizen.png']}");
+  background-repeat:no-repeat;
+   
+}
+#right {
+  width: 130px;          /* RC width */
+  padding: 0 10px;       /* RC padding */
+  margin-right: -190px;  /* RC fullwidth + CC padding */
+  background-image: url("#{resource['css:images/new-citizen.png']}");
+  background-repeat:no-repeat;
+}
+#container {
+  overflow: hidden;
+}
+#container .column {
+  padding-bottom: 20010px;  /* X + padding-bottom */
+  margin-bottom: -20000px;  /* X */
+}
+#footer {
+  position: relative;
+}
+#footer {
+  clear: both;
+}/*** IE Fix ***/
+* html #left {
+  left: 150px;           /* RC fullwidth */
+}
+.ui-panelgrid tr,
+.ui-panelgrid td {
+    background: none;
+    border-style: none !important;
+}
+
+.ui-panel-titlebar
+{
+background-color: #4e9a06;
+}
+
+
+#wrapper {
+    width: 100%;
+    height: 100%;
+}
+.sitaheader {
+	height: 40%;
+	width: 100%;
+	margin: 0;
+    padding: 0;
+	background-image: url("#{resource['css:images/new-citizen.png']}");
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+.eservice
+{
+	/* display:inline; */
+	width: inherit;
+    height: inherit;
+    border: none;
+    margin-left: 20%;
+    margin-right: 20%;
+	background-image: url("#{resource['css:images/tp7.jpg']}");
+    background-repeat:no-repeat;
+} 
+
+.citizen
+{
+	/* display:inline; */
+	width: 100%;
+    height: 60%;
+    border: none;
+    background-image: url("#{resource['css:images/citizenpage.jpg']}");
+    background-repeat:no-repeat; 
+    background-size: cover; 
+}
+
+
+
+
+
+#esvr {
+    background: #204a87;
+    float: center;
+    width: 80%;
+    margin-right: -200px;
+}
+.sitafooter
+{
+	
+	width: 100%;
+	height: 120px;
+	margin-top: 1.5px !important;
+	background-image: url("#{resource['css:images/Bottombanner.gif']}");
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+.sitaheader1 {
+	height: 150px;
+	margin: 0;
+    padding: 0;
+	background-image: url("#{resource['css:images/new-citizen.png']}");
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+.center {
+	width: 100%;
+	height: 100%;
+	background-color: blue;
+}
+.leftsideheader {
+	float:left;
+	width: 20%;
+	height: 100%;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	background-image: url("#{resource['css:images/new-citizen.png']}");
+    background-repeat:no-repeat;
+}
+.middleside {
+	margin-left: 20%;
+	margin-right: 20%;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	background-color: red;
+}
+.rightsideheader {
+	float:right;
+	width: 20%;
+	height: 100%;
+	background-image: url("#{resource['css:images/new-citizen.png']}");
+    background-repeat:no-repeat;
+}
+.eservice1
+{
+	/* display:inline; */
+	width: inherit;
+    height: inherit;
+    border: none;
+    margin-left: 20%;
+    margin-right: 20%;
+	background-image: url("#{resource['css:images/tp7.jpg']}");
+    background-repeat:no-repeat;
+} 
+
+.citizen1
+{
+	/* display:inline; */
+	width: inherit;
+    height: 200px;
+    border: none;
+    background-image: url("#{resource['css:images/citizenpage.jpg']}");
+    background-repeat:no-repeat; 
+    background-size: cover; 
+}
+.my-panelgrid {
+	background-color: url("#{resource['css:images/citizenpage.jpg']}");
+	font-weight: bold;
+}
+.transparentBackground tr,
+.transparentBackground td { background: transparent !important; }
+.transparentBackground th {
+  color: red !important;
+}
+.column {
+	 font-weight: bold;
+}
+.columnHeader {
+	 font-weight: bold;
+	 color: #eeeeec!important;
+	 background-color: black;
+}
+.ui-panelgrid-content {
+    border: none;
+}
+.citizenPage {
+	background-image: url("#{resource['css:images/new-citizen.png']}");
+    background-repeat:no-repeat;
+    background-size: cover;
+}

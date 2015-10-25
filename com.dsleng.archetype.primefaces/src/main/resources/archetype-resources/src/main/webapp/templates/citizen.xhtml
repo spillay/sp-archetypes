@@ -1,0 +1,107 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:f="http://java.sun.com/jsf/core">
+
+<f:view contentType="text/html" id="fview">
+
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Page template with PrimeFaces</title>
+	<ui:debug />
+	<f:metadata>
+		<ui:insert name="metadata" />
+	</f:metadata>
+	<h:outputScript library="js" name="common.js" />
+	<script src="http://maps.google.com/maps/api/js?sensor=false"
+		type="text/javascript"></script>
+	<h:head>
+
+
+		<title><ui:insert name="title">Login</ui:insert></title>
+
+		<ui:insert name="style"></ui:insert>
+
+		<div id="header"><ui:include src="header.xhtml" /></div>
+		<div id="container">
+			<div id="center" class="column">
+			<h:form id="menuform">
+					<p:menubar id="mainmenus">				
+							<p:submenu label="Citizen Participation">
+							<p:menuitem value="Complaint" url="Complaint.xhtml"></p:menuitem>
+							</p:submenu>
+							<p:submenu label="Department Participation">
+							<p:menuitem value="Dept Participation" url="DeptView.xhtml"></p:menuitem>
+							</p:submenu>
+					</p:menubar>
+				</h:form>
+				<ui:insert name="content" />
+			</div>
+			<div id="left" class="column"><ui:include src="west.xhtml" /></div>
+			<div id="right" class="column"><ui:include src="east.xhtml" /></div>
+		</div>
+		<div id="footer"><ui:include src="footer.xhtml" /></div>
+
+
+		<!-- 
+		<ui:include src="header.xhtml" />
+
+		<div class="center">
+			<ui:include src="west.xhtml" />
+			<div class="middle">
+				<h:form id="menuform">
+					data
+				</h:form>
+			</div>
+			<ui:include src="east.xhtml" />
+		</div>
+		
+		
+		<p:layout fullPage="true">
+			<p:layoutUnit position="north" size="150" id="north" resizable="true">
+				<ui:include src="header.xhtml" />
+			</p:layoutUnit>
+
+			<p:layoutUnit position="west" id="west" resizable="true" size="225">
+				<ui:include src="west.xhtml" />
+			</p:layoutUnit>
+
+			<p:layoutUnit styleClass="layoutUnitCenter" position="center" resizable="true">
+			<h:form id="menuform">
+					<p:menubar id="mainmenus">				
+							<p:submenu label="Permit Application">
+							<p:menuitem value="New Application" url="PermitApp.xhtml"></p:menuitem>
+							<p:menuitem value="Registered Applicant" url="PermitApp2.xhtml"></p:menuitem>
+							</p:submenu>
+							<p:menuitem value="Client Enquiry" url="ClientEnquiry.xhtml"></p:menuitem>
+							<p:menuitem value="Dept Management" url="DeptView.xhtml"></p:menuitem>
+							<p:menuitem value="Location Services" url="LocationView.xhtml"></p:menuitem>
+					</p:menubar>
+				</h:form>
+					<ui:insert name="content" />
+			</p:layoutUnit>
+
+			<p:layoutUnit position="east" size="225" id="east" resizable="true">
+				<ui:include src="east.xhtml" />
+			</p:layoutUnit>
+
+			<p:layoutUnit position="south" resizable="true" id="south">
+				<ui:include src="footer.xhtml" />
+			</p:layoutUnit>
+		</p:layout>
+		
+-->
+
+
+
+
+	</h:head>
+
+	<h:body>
+		<h:outputStylesheet library="css" name="mygov.css" />
+	</h:body>
+
+</f:view>
+</html>

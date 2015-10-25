@@ -14,7 +14,8 @@
  	<!-- 
     <context:component-scan base-package="za.co.egov.integration" />
     <context:component-scan base-package="za.co.egov.cn" />
-    <context:component-scan base-package="${packageName}" />
+    <context:component-scan base-package="za.co.egov.epart" />
     -->
+     <context:component-scan base-package="${packageName}.beans" />
     <mvc:annotation-driven /> 
 </beans>

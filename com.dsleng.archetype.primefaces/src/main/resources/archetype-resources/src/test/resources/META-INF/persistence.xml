@@ -12,9 +12,9 @@
 		<class>za.co.egov.cn.PermitStatus</class>
 		<class>za.co.egov.cn.PermitHistory</class>
 		<properties>
-			<property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/egov" />
+			<property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/bsol" />
 			<property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver" />
-			<property name="javax.persistence.jdbc.user" value="egov" />
+			<property name="javax.persistence.jdbc.user" value="bsol" />
 			<property name="javax.persistence.jdbc.password" value="12test21" />
 			<property name="eclipselink.logging.level" value="ALL" />
 			<property name="hibernate.hbm2ddl.auto" value="create-drop"/>
